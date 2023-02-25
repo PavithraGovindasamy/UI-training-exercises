@@ -10,7 +10,8 @@
 body {
     background-color: black;
 }
-h1{
+
+h1 {
     font-family: 'roboto condensed';
 }
 
@@ -166,7 +167,7 @@ hr {
     color: #f1f1f1;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .main_header {
         flex-direction: column-reverse;
     }
@@ -186,12 +187,12 @@ hr {
 
     .container {
         flex-direction: column;
-        left: 0;
+        width: 97%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 70px
     }
 
-    .container img {
-        width: 300px;
-    }
 
     .header h1 {
         font-size: 40px;
@@ -203,8 +204,9 @@ hr {
     }
 
     .logos_container {
-        padding: 9px;
-        justify-content: space-between;
+        width: 79%;
+        justify-content: space-around;
+        column-gap: 32%;
     }
 
     .caption {
@@ -216,12 +218,14 @@ hr {
     }
 
     div .image_style {
-        width: 78%;
+        width: 93%;
     }
 
     .caption h4 {
         font-size: 20px;
     }
-
+    .media_icons i{
+        width: 30px;
+    }
 
 }
