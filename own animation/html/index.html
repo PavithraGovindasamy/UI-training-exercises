@@ -1,206 +1,35 @@
-<!-- Review comments -->
-<!-- 
-    1. add comments to the code
-    2. follow same naming conventions for the class name to maintain modularity\
-    3. use separate css file for styling
-    4. Have the animations alone as a separate section while styling
- -->
-
 <!DOCTYPE html>
 <html>
 
 <head>
-    <style>
-        body {
-            background-image: url("../assests/img/2zauBc.webp");
-            background-size: cover;
-            background-repeat: no-repeat;
-            opacity: 1;
-        }
 
-        .ghost_girl {
-            position: absolute;
-            left: 9%;
-            margin-top: 19%;
-        }
+<link href="../css/index.css" rel="stylesheet">
 
-        .ghost_girl img {
-            height: 400px;
-            opacity: 0.8;
-        }
-
-        .ghost_girl:hover {
-            display: inline;
-            zoom: 208%;
-        }
-
-        .moon {
-            position: absolute;
-            width: 100PX;
-            height: 100PX;
-            background-color: white;
-            border-radius: 50%;
-            box-shadow: 0px 0px 20px 10px GREY;
-            animation: flicker 1s infinite;
-            left: 90%;
-            margin-top: 4%;
-        }
-
-        @keyframes flicker {
-
-            0%,
-            100% {
-                opacity: 0.7;
-                box-shadow: 0px 0px 20px 10px grey;
-            }
-
-            50% {
-                opacity: 0.4;
-                box-shadow: none;
-            }
-        }
-
-        .spooky {
-            position: absolute;
-            animation: slide-right 1s ease-out infinite;
-            margin-top: 29%;
-        }
-
-        .spooky img {
-            width: 125px;
-            opacity: 0.4;
-        }
-
-        @keyframes slide-right {
-            0% {
-                left: 35%;
-            }
-
-            50% {
-                left: 50%;
-            }
-
-            100% {
-                left: 90%;
-            }
-        }
-
-        .rope {
-            position: absolute;
-            margin-top: 13%;
-            left: 13%;
-        }
-
-        .rope img {
-            width: 50px;
-            opacity: 0.9;
-        }
-
-        .spooky-container {
-            position: absolute;
-            left:10%;
-        }
-
-        .spooky-heading {
-            position: absolute;
-            z-index: 1;
-            text-align: center;
-            font-size: 70px;
-            color: white;
-            left:14%;
-            animation: spooky 3s ease-in-out infinite;
-        }
-
-        @keyframes spooky {
-            0% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(20px);
-            }
-
-            100% {
-                transform: translateY(0);
-            }
-        }
-
-        .spooky-container::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background-color: black;
-            opacity: 0;
-            animation: fade-in 2s ease-in-out forwards;
-        }
-
-        @keyframes fade-in {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 0.5;
-            }
-        }
-
-        
-
-        .right {
-            left: 73%;
-            margin-top: 22%
-        }
-
-        .eye::after {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            content:"";
-            background-color: grey;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%); 
-            box-shadow: 1 0 10px red;
-            animation: blink 3s infinite;
-        }
-
-         @keyframes blink {
-            50% {
-                opacity: 1;
-                box-shadow: 0 0 20px grey;
-            }
-
-            100% {
-                opacity: 0;
-                box-shadow: 0 0 10px grey;
-            }
-        } 
-    </style>
-
-
-
+</head>
 <body>
-    <div class="spooky">
-        <img src="../assests/img/Screenshot 2023-02-25 at 10.59.19 PM.png" alt="Image">
+    <!--Start :header-->
+    <div class="container">
+        <h1 class="heading">BOO!</h1>
     </div>
+     <!--End :header-->
+     <!--Start :Rotating image-->
+    <div class="ghost">
+        <img src="../assests/img/ghost.png"  alt="ghost_image">
+    </div>
+      <!--End :Rotating image-->
     <div class="rope">
-        <img src="../assests/img/Screenshot 2023-02-26 at 1.37.34 PM.png">
+        <img src="../assests/img/rope.png" alt="rope_image">
     </div>
-
+    <!--Start :Image-->
     <div class="ghost_girl">
-        <img src="../assests/img/Screenshot 2023-02-26 at 1.33.28 PM.png">
+        <img src="../assests/img/ghost1.png" alt="ghost">
     </div>
-
+    <!--End:Image-->
+    <!--Start :moon animation-->
     <div class="moon"></div>
+     <!--End :moon animation-->
 
-    <div class="spooky-container">
-        <h1 class="spooky-heading">BOO!</h1>
-    </div>
+    
 
 
 

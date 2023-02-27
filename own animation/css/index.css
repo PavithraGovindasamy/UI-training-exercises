@@ -1,0 +1,128 @@
+/* body */
+body {
+    background-image: url("../assests/img/2zauBc.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    overflow: hidden;
+}
+/* heading */
+.container {
+    position: absolute;
+    left: 10%;
+}
+
+.heading {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    font-size: 70px;
+    color: white;
+    left: 14%;
+    animation: heading 3s ease-in-out infinite;
+}
+
+/*  ghost styling */
+.ghost_girl {
+    position: absolute;
+    left: 10%;
+    margin-top: 18%;
+}
+
+.ghost_girl img {
+    height: 351px;
+    opacity: 0.8;
+
+}
+
+.ghost_girl:hover {
+    display: inline;
+    zoom: 208%;
+   
+}
+/* animation for moon */
+.moon {
+    position: absolute;
+    width: 100PX;
+    height: 100PX;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 10px GREY;
+    animation: flicker 1s infinite;
+    left: 90%;
+    margin-top: 4%;
+}
+
+/* rotating ghost */
+.ghost {
+    position: absolute;
+    animation: slide-right 1s ease-out infinite;
+    margin-top: 29%;
+}
+
+.ghost img {
+    width: 125px;
+    opacity: 0.4;
+}
+
+
+/* rope container */
+.rope {
+    position: absolute;
+    margin-top: 13%;
+    left: 13%;
+}
+
+.rope img {
+    width: 50px;
+    opacity: 0.9;
+}
+
+
+/* animation */
+
+
+@keyframes heading {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* animation for moon */
+
+@keyframes flicker {
+
+    0%,
+    100% {
+        opacity: 0.7;
+        box-shadow: 0px 0px 20px 10px grey;
+    }
+
+    50% {
+        opacity: 0.4;
+        box-shadow: none;
+    }
+}
+/* animation for rotating ghost */
+
+@keyframes slide-right {
+    0% {
+        left: 35%;
+    }
+
+    50% {
+        left: 50%;
+    }
+
+    100% {
+        left: 90%;
+    }
+}
