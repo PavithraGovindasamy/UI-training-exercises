@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Condensed&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500;1,900&family=Zeyada&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main_header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main_header .email {
+  width: 80%;
+  margin: auto;
+  height: 112px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.main_header .email p {
+  color: #f1f1f1;
+  font-size: 25px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  font-weight: 900;
+  right: 14%;
+}
+.main_header .header {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 65px;
+}
+.main_header .header h1 {
+  font-size: 160px;
+  font-weight: 500;
+}
+.main_header .header h1 .style-heading {
+  font-weight: 100;
+}
+.main_header .sub_header {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 23px;
+  margin-bottom: 161px;
+  font-size: 34px;
+}
+.main_header .sub_header h2 {
+  color: rgb(241, 241, 241);
+  letter-spacing: 0.4;
+}
+.main_header .sub_header h2 span {
+  color: rgb(91, 142, 220);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  row-gap: 27px;
+  column-gap: 34px;
+  margin-bottom: 70px;
+}
+.container .image_style {
+  width: 444px;
+}
+.container .image_style img {
+  width: 100%;
+}
+
+.caption {
+  color: rgb(226, 213, 213);
+  text-align: center;
+  font-size: 50px;
+  margin-top: 140px;
+  margin-bottom: 74px;
+}
+.caption span {
+  color: rgb(192, 222, 144);
+  font-weight: light;
+}
+
+.logos_container {
+  margin: auto;
+  width: 74%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+  margin-bottom: 260px;
+}
+.logos_container .logo img {
+  width: 130px;
+}
+.logos_container .logo1 img {
+  width: 90px;
+}
+.logos_container .logo2 img {
+  width: 160px;
+}
+.logos_container .logo3 img {
+  width: 110px;
+}
+.logos_container .logo4 img {
+  width: 140px;
+}
+
+.horizontal_line {
+  /* padding: 32px; */
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.horizontal_line .smaller_line {
+  width: 2%;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 3px;
+}
+.horizontal_line .longer_line {
+  width: 13%;
+  border-bottom: 1px solid #f1f1f1;
+  margin-left: 31px;
+}
+
+.media_icons {
+  color: #f1f1f1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+.media_icons i {
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 50%;
+  font-size: 29px;
+  margin-left: 16px;
+  padding: 8px;
+}
+.media_icons i .fa-brands,
+.media_icons i .fa {
+  padding: 10px;
+  text-align: center;
+  margin: 8px;
+}
+.media_icons i .fa-solid {
+  padding: 11px;
+  text-align: center;
+  margin: 8px;
+}
+.media_icons i .fa-solid i {
+  font-size: 38px;
+}
+.media_icons .media_icons:hover {
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  align-items: center;
+  margin-bottom: 155px;
+  margin-top: 60px;
+  font-size: 23px;
+}
+.footer p {
+  color: #f1f1f1;
+}
+
+@media only screen and (max-width: 800px) {
+  .main_header {
+    flex-direction: column-reverse;
+    margin-top: 151px;
+  }
+  .main_header .email {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .main_header .email p {
+    color: white;
+    font-size: 13px;
+    margin-top: 30px;
+    margin-bottom: -52px;
+    margin-top: 22px;
+    font-weight: 900;
+  }
+  .header_data {
+    height: 45px;
+  }
+  .header_data .header h1 {
+    font-size: 44px;
+    text-align: center;
+    margin-top: -29px;
+  }
+  .header_data .header h1 .style-heading {
+    font-weight: 100;
+    font-size: 42px;
+  }
+  .header_data .sub_header {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+    margin-bottom: 161px;
+    font-size: 17px;
+  }
+  .container {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 70px;
+    row-gap: 11.5px;
+    margin-top: 35px;
+  }
+  .container .image_style {
+    width: 93%;
+  }
+  .caption {
+    margin-top: 17px;
+    margin-bottom: 25px;
+  }
+  .caption h4 {
+    font-size: 26px;
+  }
+  .media_icons {
+    color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 42px;
+  }
+  .media_icons .icons {
+    margin-left: 12px;
+  }
+  .media_icons .icons i {
+    width: 24px;
+    height: 25px;
+    margin: 0;
+    margin: 3px;
+    font-size: 25px;
+  }
+  .horizontal_line {
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+    padding: 0px;
+    margin-left: 5%;
+  }
+  .horizontal_line .smaller_line {
+    width: 9%;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 0px;
+    margin-right: -12px;
+  }
+  .horizontal_line .longer_line {
+    width: 38%;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 3px;
+  }
+  .logos_container {
+    row-gap: 53px;
+    width: 86%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 83px;
+    margin-bottom: 139px;
+  }
+  .logos_container img {
+    object-fit: contain;
+  }
+  .logos_container .logo img {
+    width: 90px;
+  }
+  .logos_container .logo1 img {
+    width: 50px;
+  }
+  .logos_container #logo1 {
+    margin-left: -48px;
+  }
+  .logos_container .logo2 img {
+    width: 100px;
+  }
+  .logos_container #logo2 {
+    margin-right: -33%;
+  }
+  .logos_container .logo3 img {
+    width: 77px;
+  }
+  .logos_container .logo4 img {
+    width: 109px;
+  }
+  .footer {
+    text-align: center;
+    margin-bottom: 41px;
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=new_styles.css.map */
