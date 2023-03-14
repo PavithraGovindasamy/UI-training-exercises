@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+/* Header */
+.fixed-title {
+    height: 60px;
+    width: 100%;
+    position: sticky;
+    top: 0%;
+    background-color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    padding-left: 282px;
+    font-weight: 600;
+    margin-top: 1%;
+
+}
+
+.icon {
+    padding-right: 257px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+    column-gap: 9px;
+}
+
+
+.icon p {
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: 5px;
+    top: 1%;
+
+}
+
+
+.icon img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* container */
+.main-container {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 282px;
+
+}
+
+
+#container {
+    display: flex;
+    width: 65%;
+    margin-top: 17px;
+    flex-direction: column;
+}
+
+/* .div_video{
+    display: flex;
+    justify-content: center;
+    width: 92%;
+    margin: auto;
+} */
+
+
+.video {
+    width: 100%;
+    height: 396px;
+    object-fit: cover;
+
+
+}
+
+
+.card {
+    margin-top: 1%;
+}
+
+.div_card {
+    padding-left: 20px;
+}
+
+#container .description {
+
+    font-size: 13px;
+    margin-top: 15px;
+    width: 100%;
+    line-height: 24.2px;
+}
+
+
+.card-comments {
+    margin-top: -14px;
+    margin-left: -2%;
+    display: flex;
+
+}
+
+.content-title {
+    margin-top: 24px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.image {
+    display: flex;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    margin-left: 16px;
+    margin-top: 34px;
+}
+
+.comments {
+    padding-top: 20px;
+}
+
+.comment-name {
+    display: flex;
+    margin-top: 34px;
+    left: 348px;
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+    width: 40%;
+
+
+
+}
+
+.com {
+    display: flex;
+    margin-top: 2px;
+    left: 349px;
+    font-size: 12px;
+    color: black;
+    font-weight: 200;
+    justify-content: center;
+
+    line-height: 18.2px;
+}
+
+hr {
+    width: 100%;
+    margin-top: 2%;
+}
+
+#image-container {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding: 27px;
+    /* margin-top: 17px;*/
+
+
+}
+
+#image-container p {
+    margin-bottom: -16px;
+    margin-left: 15px;
+    font-size: 19px;
+}
+
+.products_image {
+    width: 100%;
+    margin-top: 34px;
+}
+.icon p {
+    font-size: 15px;
+    /* margin-left: -83%; */
+    font-weight: 100;
+
+}
+#fixed-icon {
+    position: fixed;
+    bottom: 62px;
+    right: 44px;
+}
+#fixed-icon img{
+    width: 78px;
+    height: 78px;
+}
+.div_image {
+    width: 63%;
+    margin-bottom: -23px;
+}
+
+
+.footer {
+    position: relative;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 71px;
+    background-color: rgb(34, 34, 34);
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 393px;
+    color: #f1f1f1;
+    align-items: center;
+    margin-top:23px;
+}
+.footer .topic{
+    margin-right: -37px;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-container {
+        display: flex;
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .title {
+        margin-left: 8%;
+        margin-top: 3%;
+        padding-left: 0px;
+
+    }
+    .comments {
+        padding-top: 20px;
+        padding-left: 24px;
+    }    
+
+    .content-title {
+        margin-top: 24px;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 16px;
+        display: flex;
+        width: 21%;
+        justify-content: center;
+    }
+
+    #image-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        margin: 0px;
+        justify-content: center;
+    }
+    #image-container p {
+        margin-bottom: -16px;
+        margin-left: 1px;
+        font-size: 19px;
+    }
+
+    .div_video {
+        display: flex;
+        justify-content: center;
+        width: 92%;
+        margin: auto;
+    }
+
+    .div_image {
+
+        width: 100%;
+        margin-bottom: 0px;
+
+    }
+
+    .com {
+        margin-top: 2px;
+        width: 100%;
+        left: 100px;
+        font-size: 12px;
+        color: black;
+        font-weight: 200;
+    }
+
+    #container .description {
+        font-size: 15px;
+        margin-top: -18px;
+        font-weight: 300;
+        margin: auto;
+        display: flex;
+        width: 91%;
+
+    }
+
+    .comment-name {
+       
+            font-size: 11px;
+            color: black;
+            font-weight: 600;
+            width: 100%;
+
+    }
+
+    .image {
+
+        width: 48px;
+        height: 47px;
+        border-radius: 50%;
+        left: 16px;
+        margin-left: 0px;
+        margin-top: 34px;
+
+    }
+
+    .icon {
+        padding-right: 0px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 10px;
+        column-gap: 9px;
+
+    }
+
+    .div_card {
+
+        display: flex;
+        flex-direction: column;
+        padding-left: 13px;
+    }
+
+    .icon img {
+
+        width: 30px;
+        position: relative;
+        height: 30px;
+        /* left: 26%; */
+        border-radius: 50%;
+        /* top: -36%;*/
+
+    }
+
+    .icon p {
+        font-size: 15px;
+        /* margin-left: -83%; */
+        font-weight: 100;
+
+    }
+
+    .products_image {
+        width: 100%;
+        height: auto;
+        margin-bottom: -17px;
+    }
+
+    .video {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-comments {
+        width: 94%;
+    margin: auto;
+    }
+
+    #container {
+        width: 100%;
+        margin-top: 17px;
+    }
+
+    /* footer */
+    .footer{
+        position: relative;
+        display: flex;
+        bottom: 0;
+        width: 100%;
+        height: 71px;
+        background-color: rgb(34, 34, 34);
+        flex-direction: column;
+        justify-content: space-around;
+        column-gap: 393px;
+        color: #f1f1f1;
+        align-items: center;
+        margin-top: 16px;
+    }
+    .footer .topic{
+        margin-right: 0px;
+    }
+
+}
