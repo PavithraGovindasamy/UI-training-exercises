@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../css/index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+    <div class="image">
+        <img src="../img/Sirius_CDW_Cobranded_PMS2747.svg" alt="sirius image"/>
+    </div>
+    <!--Container-->
+    <div class="container">
+        <form name="myform" onsubmit="return validateform()">
+            <!--tittle-->
+            <p class="title">BILLING DETAILS</p>
+            <!--Start:first_name-->
+            <div class="first-heading">
+                <div class="firstname">
+                    <label>First Name</label>
+                    <input type="text" name="firstname" id="first-name"  class="small-box" />
+                    <div id="first-name-error" class="error-color"></div>
+                </div>
+                <!--End:first_name-->
+                <!--Start:last_name-->
+                <div class="lastname">
+                    <label>Last Name</label>
+                    <input type="text" name="lastname" id="last-name" class="small-box" />
+                    <div id="last-name-error" class="error-color"></div>
+                </div>
+                <!--End:last_name-->
+            </div>
+            <!--Start:Email-->
+            <div class="second-heading">
+                <div class="email">
+                    <label>Email Address</label>
+                    <input type="text" name="email" id="email" class="long-box" />
+                    <div id="email-error" class="error-color"></div>
+                </div>
+            </div>
+            <!--End:Email-->
+            <!--Start:Contact-->
+
+            <div class="contact">
+                <label>Contact Number</label>
+                <input type="text" name="phno" id="contact" class="long-box" />
+                <div id="contact-error" class="error-color"></div>
+            </div>
+            <!--End:Contact-->
+            <div class="pincode">
+                <label>PIN Code</label>
+                <input type="text" name="pincode" id="pincode" class="long-box" />
+                <div id="pincode-error" class="error-color"></div>
+            </div>
+            <!--Start:Payment-->
+            <p class="title">PAYMENT DETAILS</p>
+            <div class="card-number">
+                <label>Card Number</label>
+                <input type="text" name="cardno" id="card" class="long-box" />
+                <div id="card-error" class="error-color"></div>
+            </div>
+            <!--End:Payment-->
+            <div class="footer">
+                <div class="expiry-date-number">
+                    <label>Card Expiry(Year)</label>
+                    <input type="text" name="cardexp" id="exp-card" class="small-box" />
+                    <div id="expiry-error" class="error-color"></div>
+                </div>
+                <div class="cvv-number">
+                    <label>CVV</label>
+                    <input type="text" name="cvv" id="cvv" class="small-box" />
+                    <div id="cvv-error" class="error-color"></div>
+                </div>
+            </div>
+            <!--Start:Button-->
+            <button type="submit" value="register" class="button">COMPLETE PAYMENT</button>
+            <!--End:Button-->
+        </form>
+    </div>
+   
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
