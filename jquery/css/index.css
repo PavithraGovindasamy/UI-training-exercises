@@ -1,0 +1,71 @@
+#tabs {
+  width: 652px;
+  max-height: 850px;
+
+  margin: auto;
+  background-color: #ffffff;
+  padding: 5px;
+  margin-top: -23px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  margin-top: -49px;
+}
+
+.image img {
+  width: 270px;
+}
+
+.ui-tabs .ui-tabs-nav {
+  margin: -30px;
+  margin-left: -4px;
+  padding: 0.2em 0.2em 0;
+}
+
+ul {
+  margin-top: 30%;
+}
+
+#tabs-1 img {
+  width: 100%;
+}
+
+#container {
+  width: 632px;
+  min-height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90.8%;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 65px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 599px;
+  padding: 4px;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+#tabs-3 {
+  overflow: scroll;
+  height: 100%;
+  width: 100%;
+}
+
+.card .img {
+  width: 20px;
+  height: 20px;
+}
+
+#tabs-3 img {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+}

@@ -1,0 +1,224 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Tabs - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#tabs").tabs();
+      $( "#accordion" ).accordion();
+
+
+    });
+  
+  </script>
+  <style>
+    body{
+      background-color: rgb(245,245,245);
+    }
+    #tabs {
+      width: 652px;
+    max-height: 970px;
+    margin: auto;
+    background-color: rgb(255,255,255);
+    padding: 5px;
+    margin-top: -23px;
+    border: 1px solid rgb(255,255,255)
+    }
+
+    .image {
+      display: flex;
+      justify-content: center;
+      margin-top: -49px;
+    }
+
+    .image img {
+      width: 270px;
+    }
+
+    .ui-tabs .ui-tabs-nav {
+      margin: -30px;
+      margin-left: -4px;
+      padding: 0.2em 0.2em 0;
+    }
+    .ui-tabs .ui-tabs-panel {
+    display: block;
+    border-width: 0;
+    padding: 1em 1.4em;
+    background: none;
+    margin-top: 30px;
+
+    }
+    .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid #003eff;
+    background: rgb(6,26,109);
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.ui-tabs .ui-tabs-nav {
+    margin: -30px;
+    margin-left: -4px;
+    padding: 0.2em 0.2em 0;
+    /* background-color: white; */
+    border: 1px solid #f1f1f1;
+}
+.ui-widget-header {
+    /* border: 1px solid #dddddd; */
+    /* background: #e9e9e9; */
+    color: #333333;
+    font-weight: bold;
+}
+    ul {
+      margin-top: 30%;
+    }
+
+    #tabs-1 img {
+      width: 100%;
+    }
+
+    #container {
+      width: 632px;
+      max-height: 700px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 90.8%;
+      margin: auto;
+      justify-content: space-between;
+      margin-top: 65px;
+    }
+
+    .card {
+      display: flex;
+    flex-wrap: wrap;
+    width: 599px;
+    padding: 4px;
+    justify-content: space-between;
+    margin-bottom: 13px;
+    align-items: center;
+    }
+
+    #tabs-3 {
+      overflow: scroll;
+      height: 100%;
+      width: 100%;
+    }
+
+    .card .img {
+      width: 20px;
+      height: 20px;
+    }
+
+    #tabs-3 img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+    div .ui-accordion-content-active{
+      height: 300px;
+    }
+    .ui-tabs .ui-tabs-nav {
+    margin: -30px;
+    margin-left: -4px;
+    padding: 0.2em 0.2em 0;
+    background-color: white;
+    border: 1px solid white;
+}
+  </style>
+</head>
+
+<body>
+  <div class="image">
+    <img src="../img/Sirius_CDW_Cobranded_PMS2747.svg" alt="sirius image" />
+  </div>
+  <div id="tabs">
+    <ul>
+      <li><a href="#tabs-1">About us</a></li>
+      <li><a href="#tabs-2">Solution</a></li>
+      <li><a href="#tabs-3">Location</a></li>
+    </ul>
+    <div id="tabs-1">
+      <p>Sirius is a national integrator of technology-based business solutions that span the enterprise, including the
+        data center and lines of business. Built on products and services from the world’s top technology companies,
+        Sirius solutions are installed, configured and supported by our dedicated teams of highly certified experts.
+
+        With the right people and the right partners, Sirius focuses on solutions that will help you manage your
+        operations, optimize your IT, secure it all, and transform your business.
+
+        We require our teams to be certified in multiple disciplines and products, so they can help you get from the
+        high-level architecture of a solution all the way down to the technical configuration and implementation of
+        point-products.
+
+        Since its founding in 1980, Sirius has grown to be one of the largest IT solutions integrators in the U.S.
+        Today, Sirius offers integrated, multivendor technology solutions that meet the requirements of the full range
+        of organizations, from small businesses with fewer than 500 employees to large enterprises with thousands of
+        employees and hundreds of locations..</p>
+      <img src="../img/Screenshot 2023-03-08 at 10.08.09 AM.png">
+    </div>
+    <div id="tabs-2">
+      <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+          <p>
+          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+          odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+          </p>
+        </div>
+        <h3>Section 2</h3>
+        <div>
+          <p>
+          Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+          purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+          velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+          suscipit faucibus urna.
+          </p>
+        </div>
+        <h3>Section 3</h3>
+        <div>
+          <p>
+          Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+          Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+          ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+          lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+          </p>
+          <ul>
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+          </ul>
+        </div>
+        <h3>Section 4</h3>
+        <div>
+          <p>
+          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+          mauris vel est.
+          </p>
+          <p>
+          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+          inceptos himenaeos.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="tabs-3">
+
+    </div>
+
+  </div>
+  <script src="../js/index.js"></script>
+
+
+</body>
+
+</html>
